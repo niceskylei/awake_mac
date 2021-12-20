@@ -1,4 +1,5 @@
-const awake = require('bindings')('awake');
+// const awake = require('bindings')('awake');
+const awake = require('./build/Release/awake.node')
 let lockId = null;
 const disableScreenSleep = (reason) => {
     if (lockId == null) {

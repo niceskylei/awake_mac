@@ -104,4 +104,7 @@ dist
 .tern-port
 
 .vscode/
-build/
+build/*
+!build/Release
+build/Release/*
+!build/Release/awake.node

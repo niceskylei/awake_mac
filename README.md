@@ -5,7 +5,7 @@ Attention！ Only work for macos!!!
 ## example
 
 ```
-import {disableScreenSleep, enableScreenSleep} from 'awake_mac'
+import {disableScreenSleep, enableScreenSleep} from '@niceskylei/awake_mac'
 let ok = disableScreenSleep("marklei");
 console.log("disableScreenSleep", ok);
 if (ok) {

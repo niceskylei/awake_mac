@@ -7,12 +7,15 @@
     "bindings": "~1.2.1",
     "node-addon-api": "^1.0.0"
   },
+  "devDependencies": {
+    "cross-spawn": "^7.0.3"
+  },
   "scripts": {
     "test": "node index.js",
-    "install": "node-gyp rebuild"
+    "install": "node install.js",
+    "native_install": "node-gyp rebuild"
   },
   "gypfile": true,
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/niceskylei/awake_mac.git"

@@ -1,5 +1,15 @@
 // const awake = require('bindings')('awake');
-const awake = require('./build/Release/awake.node')
+let awake = {}
+const os = require('os');
+if (os.platform() == 'darwin') {
+    awake = require('./build/Release/awake.node')
+} else {
+    awake = {
+        disableScreenSleep: (reason) => false,
+        enableScreenSleep: () => false,
+    }
+}
+
 let lockId = null;
 const disableScreenSleep = (reason) => {
     if (lockId == null) {

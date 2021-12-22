@@ -1,6 +1,6 @@
 {
   "name": "@niceskylei/awake_mac",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "keep mac awake",
   "main": "index.js",
   "dependencies": {

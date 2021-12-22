@@ -105,6 +105,6 @@ dist
 
 .vscode/
 build/*
-!build/Release
-build/Release/*
-!build/Release/awake.node
+# !build/Release
+# build/Release/*
+# !build/Release/awake.node

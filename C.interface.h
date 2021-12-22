@@ -1,4 +1,3 @@
-#include <IOKit/pwr_mgt/IOPMLib.h>
 
-bool disableScreenSleep(const char *reason, IOPMAssertionID *noSleepAssertionID);
-bool enableScreenSleep(IOPMAssertionID noSleepAssertionID);
+bool disableScreenSleep(const char *reason, unsigned int *noSleepAssertionID);
+bool enableScreenSleep(unsigned int noSleepAssertionID);

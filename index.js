@@ -4,10 +4,11 @@ const os = require('os');
 if (os.platform() == 'darwin') {
     awake = require('./build/Release/awake.node')
 } else {
-    awake = {
+    module.exports = {
         disableScreenSleep: (reason) => false,
         enableScreenSleep: () => false,
     }
+    return
 }
 
 let lockId = null;

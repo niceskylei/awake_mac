@@ -11,7 +11,7 @@
             'defines': ['NAPI_DISABLE_CPP_EXCEPTIONS'],
 
             "link_settings": {
-                "libraries": ["/System/Library/Frameworks/Foundation.framework", "/System/Library/Frameworks/IOKit.framework"]
+                "libraries": ["/System/Library/Frameworks/Foundation.framework", "/System/Library/Frameworks/IOKit.framework", "/System/Library/Frameworks/AppKit.framework"]
             }
         }
     ]

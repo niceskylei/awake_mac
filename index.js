@@ -30,6 +30,11 @@ const enableScreenSleep = () => {
         return ok
     }
 }
+
+const openUrl = (url) => {
+    return awake.openUrl(url)
+}
+
 function cleanup(callback) {
 
     // attach user callback to the process event emitter
@@ -58,7 +63,8 @@ cleanup(() => {
 
 module.exports = {
     disableScreenSleep,
-    enableScreenSleep
+    enableScreenSleep,
+    openUrl,
 }
 
 
